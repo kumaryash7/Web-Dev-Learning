@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            background-color: red;
+            color: white;
+            font-size: 70px;
+            text-align: center;
+            
+
+        }
+
+        /* media queries are used to make responsive design */
+        /* like if we use in a tablet /mobile/pc/etc */
+        @media (max-width:500px){
+            #box1{
+                display: block;
+            }
+        }
+        /* responive website according to our screen */
+        @media(max-width:500px) and(min-width:200px){
+
+       #box2{
+           display: block;
+           background-color: yellow;
+       }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek iphone hu</div>
+    <div class="box" id="box1">Mai ek Tablet hu </div>
+
+    <div class="box" id="box1">Mai ek computer hu</div>
+    <div class="box" id="box1">Mai ek aadmi hu</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and child pseduo Selectors </title>
+    <style>
+  input{
+      display: block;
+  }
+  .container{
+      margin: 34px,23px;
+      display: block;
+      width: 233px;
+      margin: auto;
+  }
+
+  we need to style the elements inside the input tag then we use pseudo selectors
+
+  input[type='text']{
+      border: 2px solid red;
+      color: aquamarine;
+  }
+  a[target]{
+      color: black;
+  }
+  /* n-th child pseudo selector */
+  li:nth-child(3){
+      color: blue;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://www.google.com" target="_blank">Go To Google </a></h1>
+        <h1><a href="http://www.facebbok.com" target="_blank">Go To facebbok </a></h1>
+        <form action="" class="form-control">
+<input type="text" name="" placeholder="Enter your name">
+<input type="Password" name="" placeholder="Enter your password">
+<input type="submit" value="Submit">
+
+        </form>
+    <ul>
+        <li class="item" id="item-1">Item 1</li>
+        <li class="item" id="item-2">Item 2</li>
+        <li class="item" id="item-3">Item 3</li>
+        <li class="item" id="item-4">Item 4</li>
+        <li class="item" id="item-5">Item 5</li>
+    </ul>
+
+
+
+
+
+    </div>
+</body>
+</html>

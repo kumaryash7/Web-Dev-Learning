@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo selectors & more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-attachment: rgb(233, 245, 201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+            ;
+        }
+
+        .btn {
+            background-color: red;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+
+        }
+
+        /* text decoration-none removes the effect of link */
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        /* a hover means how it looks when we hover over it */
+        /* This is called pseudo selector */
+        a:hover {
+            color: crimson;
+            background-color: aqua;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:active {
+            color: darkblue;
+            background-color: aquamarine;
+        }
+
+        button:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora harum molestias hic, sapiente rem ipsa
+        officiis dolorum blanditiis placeat, dolores natus quasi pariatur praesentium aut maxime autem amet! Voluptates,
+        iste!<br>
+        <a href="https://www.google.com">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

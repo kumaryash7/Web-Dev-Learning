@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More ON Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        /* div>p means that agar p direct child hoga div ka tabhi effect mai ayega */
+        div>p {
+            color: black;
+
+            font-weight: bold;
+            background-color: wheat;
+        }
+
+        /* it means that jiska picla sibling div ho uske liye efgect ho jaega */
+        div+p {
+            color: white;
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="conatiner">
+
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is yash kumar</p>
+                </li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

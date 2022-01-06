@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2 align=center><b>This is forms tutorial</b></h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="myName">
+        </div><br>
+        <div>
+
+            Role: <input type="text" name="myRole">
+        </div><br>
+        <div>
+
+            Email:<input type="email" name="myEmail">
+        </div><br>
+
+        <div>
+            Date:<input type="date" name="myDate">
+        </div><br>
+        Bonus: <input type="number"><br>
+
+        <!-- labels tag -->
+        <div><label for="select">Are you eligible</label>
+            Are you eligible: <input type="checkbox" name="myCheckboxs" id="select"><br>
+        </div><br>
+        <div>
+            Gender: Male <input type="radio" name="myGender">
+            Female<input type="radio" name="myGender">
+            other<input type="radio" name="myGender"><br>
+
+        </div><br>
+        <div>
+            Write about yourself:<textarea name="myText " cols="20" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Reset Now"><br>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+
+        </div><br>
+    </form>
+</body>
+
+</html>
