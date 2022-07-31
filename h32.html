@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable/ Csutom Properties</title>
+    <style>
+        /* root is like a global scope variable which can effect every style tag */
+        :root {
+            --danger-color: red;
+        }
+
+        .box {
+            --box-color: violet;
+            /* declared a varibale box color */
+            /* scope of this varibale is just inside this .box  */
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            box-shadow: var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box"> Box 2</div>
+        <div class="box"> Box 3</div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+ 
+.d-inline-block :nth-child(odd){
+    background-color: aqua;
+}
+ 
+ html body{
+     background-color: aliceblue;
+ }
+ 

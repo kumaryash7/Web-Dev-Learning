@@ -1,0 +1,17 @@
+{
+    "name":"Social Media Restricter",
+    "description":"Restricts Social Media for a limited time",
+    "manifest_version":3,
+    "version":"1.0",
+    
+    "content_scripts":[{
+  "js":["script.js"],
+  
+  "matches":["<all_urls>"]
+
+    }],
+    
+
+
+    "permssions":["activeTab","tabs"]
+}

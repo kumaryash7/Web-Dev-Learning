@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOx shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: aqua;
+            /* box shadow : x y blur pixel spread radius color */
+            /* by taking negative x and y direction of shadow changes */
+            /* box-shadow: 10px 13px  10px 34px green;
+             */
+            /* box box-shadow: ; inset apply box shadow
+             inside the box */
+            box-shadow: inset 3px 5px red;
+        }
+        .card h2{
+        text-shadow: 2px 3px green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+  <div class="card" id="item1"><h2>Card 1</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, doloribus vel magnam quam ab vitae non iste distinctio aliquam reiciendis explicabo accusantium fugit corrupti, doloremque consectetur enim et aliquid ipsum commodi totam minima quas.</p></div>
+  <div class="card" id="item2"><h2>Card 2</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, doloribus vel magnam quam ab vitae non iste distinctio aliquam reiciendis explicabo accusantium fugit corrupti, doloremque consectetur enim et aliquid ipsum commodi totam minima quas.</p></div>
+  <div class="card" id="item3"><h2>Card 3</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, doloribus vel magnam quam ab vitae non iste distinctio aliquam reiciendis explicabo accusantium fugit corrupti, doloremque consectetur enim et aliquid ipsum commodi totam minima quas.</p></div>
+  <div class="card" id="item4"><h2>Card 4</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, doloribus vel magnam quam ab vitae non iste distinctio aliquam reiciendis explicabo accusantium fugit corrupti, doloremque consectetur enim et aliquid ipsum commodi totam minima quas.</p></div>
+
+    </div>
+    
+</body>
+</html>

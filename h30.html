@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selctors</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            /* background: url(https://unsplash.com/photos/boupM86OFpA);
+            z-index: -1; */
+            /* position: absolute;
+            top: 0;
+            left: 0;
+             */
+             /* opacity lightens the background so that we can read the text */
+             opacity: 0.5;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+
+            height: 400px;
+            justify-content: center;
+        }
+        /* section::before{
+            /* content: "This is pseudo selector"; */
+        /* } */ */
+
+        /* pesudo selector after and before helps us to add content before or after that tag */
+
+        /* section::before{
+            content: "This is added before section";
+        } */
+
+        .navigation {
+            display: flex;
+            font-size: 24px;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Conact Us</li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, optio recusandae aperiam aliquam atque
+            obcaecati quas velit nam at, et eius. Odio minima, nostrum reiciendis cumque iusto laborum iste debitis
+            optio iure aperiam illo nemo modi quasi ratione! Explicabo, ex.</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>
